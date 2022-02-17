@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App{
+  padding: 50px 0px;
+}
+
+.wrapper{
+  height: 350px;
+  margin: 0px auto;
+  width: 90%;
+  position: relative;
+  .img-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    .a{
+      background-color: pink;
+      transition: background-color 500ms ease-in-out 250ms;
+      &:hover{
+        background-color: rgba(255, 192, 203, 0.329);
+      }
+    }
+    .b{
+      background-color: palegreen;
+      transition: background-color 500ms ease-in-out 250ms;
+      &:hover{
+        background-color: rgba(152, 251, 152, 0.315);
+      }
+    }
+    .c{
+      background-color: lightblue;
+      transition: background-color 500ms ease-in-out 250ms;
+      &:hover{
+        background-color: rgba(173, 216, 230, 0.452);
+      }
+    }
+    .d{
+      background-color: yellow;
+      transition: background-color 500ms ease-in-out 250ms;
+      &:hover{
+        background-color: rgba(255, 255, 0, 0.336);
+      }
+    }
+    .e{
+      background-color: fuchsia;
+      transition: background-color 500ms ease-in-out 250ms;
+      &:hover{
+        background-color: rgba(255, 0, 255, 0.336);
+      }
+    }
+    .f{
+      background-color: lightskyblue;
+      transition: background-color 500ms ease-in-out 250ms;
+     &:hover{
+      background-color: rgba(135, 206, 250, 0.356);
+    }
+    }
+    .foreground{
+      padding:0  10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      cursor: pointer;
+      height: 100%;
+      width: 20%;
+      p{
+        margin: 5px;
+        color: white;
+      }
+      .text-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-height: 230px;
+        .text-top{
+          font-size: 2rem;
+          transform: translateY(0) scale(1);
+          transition: transform 500ms ease-in-out 250ms;
+          height: 20%;
+        }
+        .text-bottom{
+          height: 80%;
+          font-size: 12px;
+          transform: translateY(0) scale(1);
+          transition: transform 500ms ease-in-out 250ms;
+        }
+      }
+      &:hover{
+        .text-top{
+          transform: translateY(-40px) scale(1.5);
+        }
+        .text-bottom{
+          transform: translateY(70px) scale(1.2);
+        }
+      }
+    }
+    .img-wrapper{
+      height: 100%;
+      width: 20%;
+      background-image: url("images/pink.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      .product{
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+  }
+  #top-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
