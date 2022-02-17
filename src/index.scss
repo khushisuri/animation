@@ -77,6 +77,8 @@ code {
       cursor: pointer;
       height: 100%;
       width: 20%;
+      z-index: 5;
+      overflow: hidden;
       p{
         margin: 5px;
         color: white;
@@ -89,14 +91,14 @@ code {
         .text-top{
           font-size: 2rem;
           transform: translateY(0) scale(1);
-          transition: transform 500ms ease-in-out 250ms;
+          transition: transform 500ms 250ms;
           height: 20%;
         }
         .text-bottom{
           height: 80%;
           font-size: 12px;
           transform: translateY(0) scale(1);
-          transition: transform 500ms ease-in-out 250ms;
+          transition: transform 500ms 250ms;
         }
       }
       &:hover{
@@ -117,6 +119,11 @@ code {
       .product{
         height: 100%;
         width: 100%;
+        opacity: 0;
+        transition: opacity 500ms ease-in-out 600ms;
+      }
+      .animate{
+        opacity:1
       }
     }
 

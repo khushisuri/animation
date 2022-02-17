@@ -3,11 +3,27 @@ import "./App.css";
 import img from "./images/fluff.jpg";
 import img1 from "./images/serum.jpg";
 function App() {
+  const addClassToHoveredImage = (id) => {
+    console.log(id);
+    const img = document.getElementById(id);
+    img.classList.add("animate");
+  };
+
+  const removeClassFromHoveredImage = (id) => {
+    console.log(id);
+    const img = document.getElementById(id);
+    img.classList.remove("animate");
+  };
+
   return (
     <div className="App">
       <div className="wrapper">
         <div className="img-container" id="top-container">
-          <div className="foreground a">
+          <div
+            className="foreground a"
+            onMouseEnter={() => addClassToHoveredImage("img")}
+            onMouseLeave={() => removeClassFromHoveredImage("img")}
+          >
             <div className="text-content">
               <p className="text-top">1996</p>
               <p className="text-bottom">
@@ -16,7 +32,11 @@ function App() {
               </p>
             </div>
           </div>
-          <div className="foreground b">
+          <div
+            className="foreground b"
+            onMouseEnter={() => addClassToHoveredImage("img1")}
+            onMouseLeave={() => removeClassFromHoveredImage("img1")}
+          >
             <div className="text-content">
               <p className="text-top">2003</p>
               <p className="text-bottom">
@@ -26,7 +46,12 @@ function App() {
               </p>
             </div>
           </div>
-          <div className="foreground c">
+          <div
+            className="foreground c"
+            onClick={() => addClassToHoveredImage("img2")}
+            onMouseEnter={() => addClassToHoveredImage("img2")}
+            onMouseLeave={() => removeClassFromHoveredImage("img2")}
+          >
             <div className="text-content">
               <p className="text-top">2007</p>
               <p className="text-bottom">
@@ -35,7 +60,11 @@ function App() {
               </p>
             </div>
           </div>
-          <div className="foreground d">
+          <div
+            className="foreground d"
+            onMouseEnter={() => addClassToHoveredImage("img3")}
+            onMouseLeave={() => removeClassFromHoveredImage("img3")}
+          >
             <div className="text-content">
               <p className="text-top">2008</p>
               <p className="text-bottom">
@@ -45,7 +74,11 @@ function App() {
               </p>
             </div>
           </div>
-          <div className="foreground e">
+          <div
+            className="foreground e"
+            onMouseEnter={() => addClassToHoveredImage("img4")}
+            onMouseLeave={() => removeClassFromHoveredImage("img4")}
+          >
             <div className="text-content">
               <p className="text-top">2013</p>
               <p className="text-bottom">
@@ -54,7 +87,11 @@ function App() {
               </p>
             </div>
           </div>
-          <div className="foreground f">
+          <div
+            className="foreground f"
+            onMouseEnter={() => addClassToHoveredImage("img5")}
+            onMouseLeave={() => removeClassFromHoveredImage("img5")}
+          >
             <div className="text-content">
               <p className="text-top">2017</p>
               <p className="text-bottom">
